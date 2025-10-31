@@ -21,8 +21,7 @@ const client = new SearchClient({
 // Search with AI-generated answers
 const results = await client.search(
   ['What is machine learning?'],
-  true,
-  { summaryLevel: 'intelligent' }
+  { summaryLevel: 'intelligent', includeAnswers: true }
 );
 
 console.log(results[0].answer);
@@ -49,7 +48,7 @@ Perform AI-powered web searches with batch processing support.
 #### Method
 
 ```javascript
-client.search(queries, includeAnswers, options)
+client.search(queries, options)
 ```
 
 #### Parameters
@@ -122,8 +121,7 @@ console.log(results[0].results[0].url);
 ```javascript
 const results = await client.search(
   ['What is quantum computing?'],
-  true,
-  { summaryLevel: 'intelligent' }
+  { summaryLevel: 'intelligent', includeAnswers: true }
 );
 
 console.log(results[0].answer);
@@ -138,8 +136,8 @@ const results = await client.search(
     'Machine learning best practices',
     'Neural networks explained'
   ],
-  true,
   {
+    includeAnswers: true,
     summaryLevel: 'medium',
     maxResults: 5,
     freshness: 'week',
@@ -160,7 +158,6 @@ results.forEach(result => {
 ```javascript
 const results = await client.search(
   ['climate change research'],
-  false,
   {
     includeDomains: ['nature.com', 'science.org', 'pnas.org'],
     searchTopic: 'general',
@@ -519,12 +516,12 @@ const client = new SearchClient({
 const options: SearchOptions = {
   summaryLevel: 'intelligent',
   maxResults: 10,
-  freshness: 'week'
+  freshness: 'week',
+  includeAnswers: true
 };
 
 const results: SearchResult[] = await client.search(
   ['TypeScript best practices'],
-  true,
   options
 );
 ```
@@ -549,15 +546,14 @@ The API implements rate limiting. Refer to response headers for current limits:
 // Good: Batch related queries
 const results = await client.search(
   ['ML frameworks', 'ML tools', 'ML libraries'],
-  true,
-  { summaryLevel: 'medium', maxResults: 5 }
+  { includeAnswers: true, summaryLevel: 'medium', maxResults: 5 }
 );
 
 // Better: Use filters for precision
 const results = await client.search(
   ['latest research'],
-  true,
   {
+    includeAnswers: true,
     includeDomains: ['arxiv.org', 'nature.com'],
     freshness: 'month'
   }

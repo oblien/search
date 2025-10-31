@@ -1,6 +1,6 @@
 {
   "name": "search-agent",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Oblien Search SDK - AI-powered web search, content extraction, and website crawling. Full documentation at https://oblien.com/docs/search-api",
   "main": "src/index.js",
   "type": "module",
