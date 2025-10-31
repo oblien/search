@@ -1,0 +1,45 @@
+{
+  "name": "search-agent",
+  "version": "1.0.0",
+  "description": "Oblien Search SDK - AI-powered web search, content extraction, and website crawling. Full documentation at https://oblien.com/docs/search-api",
+  "main": "src/index.js",
+  "type": "module",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "oblien",
+    "search",
+    "web-search",
+    "ai-search",
+    "content-extraction",
+    "web-scraping",
+    "web-crawling",
+    "research",
+    "api",
+    "sdk"
+  ],
+  "author": "Oblien",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:oblien/search.git"
+  },
+  "homepage": "https://oblien.com/docs/search-api",
+  "bugs": {
+    "url": "https://github.com:oblien/search/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "src/",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ]
+}
+
