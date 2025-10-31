@@ -1,6 +1,6 @@
 /**
  * Oblien Search SDK - TypeScript Definitions
- * @module oblien-search
+ * @module search-agent
  */
 
 /**

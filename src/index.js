@@ -4,7 +4,7 @@
  * 
  * @example
  * ```javascript
- * import { SearchClient } from 'oblien-search';
+ * import { SearchClient } from 'search-agent';
  * 
  * const client = new SearchClient({
  *   clientId: process.env.OBLIEN_CLIENT_ID,

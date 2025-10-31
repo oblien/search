@@ -5,13 +5,13 @@ AI-powered web search, content extraction, and website crawling SDK for Node.js.
 ## Installation
 
 ```bash
-npm install oblien-search
+npm install search-agent
 ```
 
 ## Quick Start
 
 ```javascript
-import { SearchClient } from 'oblien-search';
+import { SearchClient } from 'search-agent';
 
 const client = new SearchClient({
   clientId: process.env.OBLIEN_CLIENT_ID,
@@ -509,7 +509,7 @@ try {
 Full TypeScript definitions are included:
 
 ```typescript
-import { SearchClient, SearchOptions, SearchResult } from 'oblien-search';
+import { SearchClient, SearchOptions, SearchResult } from 'search-agent';
 
 const client = new SearchClient({
   clientId: process.env.OBLIEN_CLIENT_ID!,
@@ -641,7 +641,7 @@ await client.crawl(
 
 - Documentation: [https://oblien.com/docs/search-api](https://oblien.com/docs/search-api)
 - Dashboard: [https://oblien.com/dashboard](https://oblien.com/dashboard)
-- Issues: [https://github.com/oblien/oblien-search/issues](https://github.com/oblien/oblien-search/issues)
+- Issues: [https://github.com/oblien/search-agent/issues](https://github.com/oblien/search-agent/issues)
 
 ## License
 
